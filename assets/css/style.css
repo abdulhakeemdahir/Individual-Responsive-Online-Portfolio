@@ -37,7 +37,7 @@ ul {
   margin-right: 30px;
 }
 
-li {
+header ul li {
   margin: 2px 5px;
   justify-content: center;
   border-bottom: 2px solid #92ccce;
@@ -84,6 +84,14 @@ li {
   flex-direction: row;
   margin: 30px;
 }
+#navfooter ul {
+  display: flex;
+  flex-direction: row;
+}
 
-#navfooter {
+#navfooter ul li {
+  justify-content: space-evenly;
+  color: #31343d;
+  width: 100%;
+  flex: 4 0;
 }
