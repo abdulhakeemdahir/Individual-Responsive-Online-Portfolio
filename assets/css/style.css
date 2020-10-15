@@ -56,13 +56,16 @@ li {
   flex-direction: row;
   margin: 30px;
 }
-
+#container {
+  flex: 4 0;
+}
 .aside {
   text-align: right;
   color: #445877;
   margin-right: 20px;
   padding-right: 3px;
   border-right: 2px solid;
+  flex: 1 0;
 }
 
 #aboutme {
@@ -80,4 +83,7 @@ li {
   display: flex;
   flex-direction: row;
   margin: 30px;
+}
+
+#navfooter {
 }
