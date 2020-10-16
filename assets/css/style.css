@@ -12,6 +12,7 @@ header {
   height: 60px;
   width: 100%;
   background-color: #31343d;
+  z-index: 1;
 }
 #bg {
   background-color: #92ccce;
@@ -26,6 +27,7 @@ h1 {
   padding-right: 5px;
   color: #31343d;
   position: relative;
+  text-align: center;
 }
 
 ul {
@@ -48,8 +50,20 @@ header ul li a {
 #hero {
   height: 200px;
   width: 100%;
-  background-image: url(../../assets/images/code-1076536_1280.jpg);
+  background-image: url(../../assets/images/daniel-abadia-ZghDk-g9iN4-unsplash.jpg);
   background-size: cover;
+  position: relative;
+}
+
+#hero p {
+  background-color: #92ccce;
+  height: 30px;
+  justify-content: center;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  padding: 10px;
+  font-weight: 900;
 }
 
 #about {
@@ -184,4 +198,40 @@ header ul li a {
   font-size: 0.9em;
   color: #31343d;
   width: 20%;
+}
+
+/*Section below is for Mobile Styling*/
+
+@media screen and (max-width: 768px) {
+  header,
+  nav,
+  #about,
+  #work,
+  #contact,
+  #container {
+    flex-direction: column;
+  }
+
+  nav {
+    z-index: 1;
+  }
+  nav ul {
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+  .aside {
+    text-align: left;
+    padding-left: 0px;
+    border-bottom: 2px solid #31343d;
+    border-right: none;
+    margin-bottom: 10px;
+  }
+
+  .aside br {
+    display: none;
+  }
 }
