@@ -35,12 +35,14 @@ ul {
   margin-right: 30px;
 }
 
-header ul li {
+header ul li a {
   margin: 2px 5px;
   justify-content: center;
+  text-decoration: none;
   border-bottom: 2px solid #92ccce;
   color: #92ccce;
   font-size: 0.9em;
+  padding-bottom: 3px;
 }
 
 #hero {
@@ -65,7 +67,7 @@ header ul li {
   color: #445877;
   margin-right: 20px;
   padding-right: 3px;
-  border-right: 2px solid;
+  border-right: 3px solid;
   flex: 1 0;
 }
 
@@ -163,14 +165,23 @@ header ul li {
   flex-direction: row;
   margin: 30px;
 }
-#navfooter ul {
+#footer {
+  width: 100%;
+}
+#navfooter {
   display: flex;
   flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
 }
 
-#navfooter ul li {
-  justify-content: space-evenly;
+#navfooter li a {
+  text-decoration: none;
+  border-bottom: 3px solid #31343d;
+  padding-bottom: 2px;
+  font-size: 0.9em;
   color: #31343d;
-  width: 100%;
-  flex: 4 0;
+  width: 20%;
 }
