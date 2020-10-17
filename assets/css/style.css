@@ -1,4 +1,15 @@
 /* Set up my document page for easier styling */
+:root {
+  --text-color: #31343d;
+  --text-color-2: #445877;
+  --text-color-3: #92ccce;
+  --display-flex: flex;
+  --flex-row: row;
+  --flex-column: column;
+  --flex-wrap: wrap;
+  --center: center;
+}
+
 body {
   background-color: #eeeef7;
   width: 100%;
@@ -7,19 +18,19 @@ body {
 }
 /* Added flex to the header for responsive navigation */
 header {
-  display: flex;
-  flex-direction: row;
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
   justify-content: space-between;
   height: 60px;
   width: 100%;
-  background-color: #31343d;
+  background-color: var(--text-color);
   z-index: 1;
 }
 /* Added a bg Id for the h1 element */
 #bg {
-  background-color: #92ccce;
+  background-color: var(--text-color-3);
   height: 35px;
-  justify-content: center;
+  justify-content: var(--center);
   margin-top: 15px;
 }
 h1 {
@@ -27,31 +38,31 @@ h1 {
   font-weight: 700;
   padding-left: 60px;
   padding-right: 5px;
-  color: #31343d;
+  color: var(--text-color);
   position: relative;
-  text-align: center;
+  text-align: var(--center);
 }
 
 ul {
-  display: flex;
-  flex-direction: row;
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
   margin-top: 20px;
   margin-right: 30px;
 }
 
 header ul li a {
   margin: 2px 5px;
-  justify-content: center;
+  justify-content: var(--center);
   text-decoration: none;
-  border-bottom: 2px solid #92ccce;
-  color: #92ccce;
+  border-bottom: 2px solid var(--text-color-3);
+  color: var(--text-color-3);
   font-size: 0.9em;
   padding-bottom: 3px;
 }
 
 a:hover {
   opacity: 0.7;
-  color: darkgoldenrod;
+  color: gold;
 }
 /* Used CSS for the image bg as it is more flexbile than the img element */
 #hero {
@@ -63,9 +74,9 @@ a:hover {
 }
 
 #hero p {
-  background-color: #92ccce;
+  background-color: var(--text-color-3);
   height: 30px;
-  justify-content: center;
+  justify-content: var(--center);
   position: absolute;
   right: 30px;
   bottom: 20px;
@@ -73,20 +84,23 @@ a:hover {
   font-weight: 900;
 }
 /* Made all of the content sections flex */
-#about {
-  display: flex;
-  flex-direction: row;
+#about,
+#work,
+#contact {
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
+  flex-wrap: var(--flex-wrap);
   margin: 30px;
 }
 .container {
-  display: flex;
-  flex-direction: row;
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
   flex: 4 0;
 }
 /* Made the aside content flex as well */
 .aside {
   text-align: right;
-  color: #445877;
+  color: var(--text-color-2);
   margin-right: 20px;
   padding-right: 3px;
   border-right: 3px solid;
@@ -95,20 +109,13 @@ a:hover {
 
 #aboutme {
   font-size: 0.9em;
-  color: #445877;
-}
-
-#work {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 30px;
+  color: var(--text-color-2);
 }
 
 .main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
+  flex-wrap: var(--flex-wrap);
   justify-content: space-between;
   width: 100%;
 }
@@ -117,7 +124,7 @@ a:hover {
   height: 200px;
   background-image: url(../../assets/images/wave-1246560_1280.jpg);
   background-size: cover;
-  border: 3px solid #92ccce;
+  border: 3px solid var(--text-color-3);
   opacity: 0.7;
 }
 /* Styled all boxes the same, except the first as it needs custom syling. */
@@ -135,29 +142,26 @@ a:hover {
 #box5 {
   width: 49%;
   height: 100px;
+  background-size: cover;
 }
 
 #box2 {
   background-image: url(../../assets/images/structure-1559179_1280.jpg);
-  background-size: cover;
 }
 
 #box3 {
   background-image: url(../../assets/images/accountant-1238598_1280.jpg);
-  background-size: cover;
 }
 
 #box4 {
   background-image: url(../../assets/images/heart-762564_1280.jpg);
-  background-size: cover;
 }
 
 #box5 {
   background-image: url(../../assets/images/boys-5630669_1280.jpg);
-  background-size: cover;
 }
 .boxdesign {
-  border: 3px solid #92ccce;
+  border: 3px solid var(--text-color-3);
   margin: 10px 0px;
   opacity: 0.7;
 }
@@ -169,14 +173,14 @@ a:hover {
 }
 
 .boxbg {
-  background-color: #92ccce;
+  background-color: var(--text-color-3);
   height: 40px;
   width: auto;
-  justify-content: center;
+  justify-content: var(--center);
   margin-top: 40px;
   position: absolute;
   padding: 3px;
-  color: #31343d;
+  color: var(--text-color);
   font-size: 0.9em;
 }
 
@@ -184,28 +188,23 @@ a:hover {
   font-size: 0.75em;
 }
 
-#contact {
-  display: flex;
-  flex-direction: row;
-  margin: 30px;
-}
 #footer {
   width: 100%;
 }
 #navfooter {
-  display: flex;
-  flex-direction: row;
+  display: var(--display-flex);
+  flex-direction: var(--flex-row);
   justify-content: space-around;
-  align-content: center;
+  align-content: var(--center);
   width: 100%;
 }
 
 #navfooter li a {
   text-decoration: none;
-  border-bottom: 3px solid #31343d;
+  border-bottom: 3px solid var(--text-color);
   padding-bottom: 2px;
   font-size: 0.9em;
-  color: #31343d;
+  color: var(--text-color);
   width: 20%;
 }
 
@@ -218,14 +217,14 @@ a:hover {
   #work,
   #contact,
   #container {
-    flex-direction: column;
+    flex-direction: var(--flex-column);
   }
   /* Made nav element z-index higher to show after flex column */
   nav {
     z-index: 1;
   }
   nav ul {
-    justify-content: center;
+    justify-content: var(--center);
     margin-right: 0px;
   }
 
@@ -233,11 +232,15 @@ a:hover {
     color: white;
   }
 
+  h1 {
+    padding-left: 0px;
+  }
+
   /* Styled the aside elements to fit better for Mobile View */
   .aside {
     text-align: left;
     padding-left: 0px;
-    border-bottom: 2px solid #31343d;
+    border-bottom: 2px solid var(--text-color);
     border-right: none;
     margin-bottom: 10px;
   }

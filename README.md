@@ -8,6 +8,7 @@ UW Bootcamp Week 2 Homework Assignment
 - [Employer Request](#employer-request)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
+- [Mockup](#mockup)
 - [Website Features and Highlights](#website-features-and-highlights)
 - [Live Project Site](#live-project-site)
 - [Installation and Git Repository](#installation-and-git-repository)
@@ -61,7 +62,7 @@ The follwing are all of the feautres and highlights of my portfolio:
 - Used semantic Html for my website structure
 - Sectioned areas so as to layout more easily
 - Created both an Aside and Container class for easier flex layout.
--
+- Validated my code with w3 validator.
 ```
 
 ### CSS
