@@ -16,7 +16,7 @@ UW Bootcamp Week 2 Homework Assignment
 
 ## Developer Comment
 
-My name is Abdulhakeem Dahir and I am an aspiring Software Developer. This week I have been tasked to make a responsive online website. I am super excited to use my Week 2 skills to create this project. Any feedback is welcome! Thank you!
+Hello everyone, and welcome back to my Repo! My name is Abdulhakeem Dahir and I am an aspiring Software Developer. This week I have been tasked to make a responsive online website. I am super excited to use my Week 2 skills to create this project. Any feedback is welcome! Thank you!
 
 ## Employer Request
 
