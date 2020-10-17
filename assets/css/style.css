@@ -48,6 +48,11 @@ header ul li a {
   font-size: 0.9em;
   padding-bottom: 3px;
 }
+
+a:hover {
+  opacity: 0.7;
+  color: darkgoldenrod;
+}
 /* Used CSS for the image bg as it is more flexbile than the img element */
 #hero {
   height: 200px;
@@ -73,7 +78,7 @@ header ul li a {
   flex-direction: row;
   margin: 30px;
 }
-#container {
+.container {
   display: flex;
   flex-direction: row;
   flex: 4 0;
@@ -100,7 +105,7 @@ header ul li a {
   margin: 30px;
 }
 
-#main {
+.main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
